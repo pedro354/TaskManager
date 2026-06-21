@@ -10,6 +10,7 @@ interface TasksContextProviderProps {
 
 export const TasksContextProvider: React.FC<TasksContextProviderProps> = ({children}) => {
 const [tasks, setTasks] = useState<Task[]>([])
+
   useEffect(() => { tasksServices.fetchTasks().then((data) => 
     setTasks(data))
   }, [])
