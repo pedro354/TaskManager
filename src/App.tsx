@@ -5,9 +5,9 @@ import { TasksContextProvider } from "./contexts/TasksContextProvider"
 
 function App() {
   return (
-    <TasksContextProvider>
+    <TasksContextProvider >
 
-    <Box maxWidth="88rem" mx="auto">
+    <Box maxWidth="88rem" mx="5" >
       <Box height="4rem">
         <Flex align="center" gap="4" height="100%">
           <Heading as="h1" size={"8"} weight={"light"}>React Kaban</Heading>
