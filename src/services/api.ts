@@ -30,7 +30,7 @@ export const tasksServices = {
 
       const newTask = {
         ...attributes,
-        id: String(Date.now),
+        id: Date.now().toString()
       };
 
       tasks.push(newTask);

@@ -2,13 +2,15 @@ import z from "zod"
 import type { Task } from "../entities/Task"
 import { useTasks } from "../hooks/useTasks"
 import type { SubmitEventHandler } from "react"
-import { Box, Button, Dialog, Flex, RadioGroup, Text, TextArea, TextField } from "@radix-ui/themes"
+import { Box, Button, Dialog, Flex, IconButton, RadioGroup, Text, TextArea, TextField } from "@radix-ui/themes"
+import { Pencil1Icon } from "@radix-ui/react-icons"
 
 const EditTaskSchema = z.object({
     title: z.string(),
     description: z.string(),
     status: z.enum(["todo", "doing", "done"]),
-    priority: z.enum(["low", "medium", "high"])
+    priority: z.enum(["low", "medium", "high"]),
+    
 })
 
 interface EditTaskFormProps {
@@ -37,15 +39,15 @@ export const EditTaskForm: React.FC<EditTaskFormProps> = ({ task }) => {
             priority
         })
 
-        await updateTask(task.id, taskData)
+        await updateTask(task.id, {...taskData, updatedAt: new Date().toISOString()})
     }
 
     return (
         <Dialog.Root>
             <Dialog.Trigger >
-                <Button>
-                    Editar
-                </Button>
+<IconButton size="3"variant="ghost">
+  <Pencil1Icon />
+</IconButton>
             </Dialog.Trigger>
 
             <Dialog.Content maxWidth="32rem">

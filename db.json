@@ -5,28 +5,24 @@
       "title": "Enviar relatório",
       "description": "Enviar o relatório mensal para o departamento financeiro.",
       "status": "doing",
-      "priority": "high"
+      "priority": "high",
+      "updatedAt": "2026-06-22T04:32:54.345Z"
     },
     {
       "id": "2",
-      "title": "Reunião de equipe",
+      "title": "Reunião de ee",
       "description": "Reunião para discutir o progresso do projeto e primeiros passos",
       "status": "todo",
-      "priority": "high"
+      "priority": "high",
+      "updatedAt": "2026-06-22T04:29:02.644Z"
     },
     {
-      "id": "3",
-      "title": "Atualizar o site",
-      "description": "Fazer atualizações no site da empresa com novas informações.",
+      "title": "Atualizar site",
+      "description": "Fazer novas atualizações no site da empresa conforme as novas informações.",
       "status": "done",
-      "priority": "medium"
-    },
-    {
-      "title": "Teste",
-      "description": "Teste",
-      "status": "done",
-      "priority": "low",
-      "id": "u--l0J5tzLo"
+      "priority": "medium",
+      "createdAt": "2026-06-22T04:34:43.852Z",
+      "id": "16WMSJa033I"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

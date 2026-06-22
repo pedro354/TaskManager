@@ -1,0 +1,60 @@
+html, body{
+    min-height: 100vh;
+}
+
+body{
+    height: 100%;
+}
+
+.card-todo, .card-doing{
+    border-top: solid 4px rgb(216, 36, 216) 
+}
+.card-done{
+        border-top: solid 4px rgb(37, 213, 1) 
+}
+.kanban-column {
+  min-height: 600px;
+}
+.separator{
+  border: solid 1px #262626;
+}
+.boardTasks{
+      padding: 15px;
+}
+
+.create-task-button {
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.kanban-column:hover .create-task-button {
+  opacity: 1;
+}
+.rt-Text.rt-r-size-1.calendar {
+  display: flex;
+  gap: 0.5rem;
+}
+.task-card {
+  transition: transform 0.2s ease;
+  cursor: grab;
+}
+
+.task-card.dragging {
+  opacity: 0.5;
+}
+
+.stats-total {
+  border-top: 3px solid violet;
+}
+
+.stats-progress {
+  border-top: 3px solid orange;
+}
+
+.stats-done {
+  border-top: 3px solid green;
+}
+
+.stats-pending {
+  border-top: 3px solid deepskyblue;
+}
